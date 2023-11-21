@@ -1,0 +1,10 @@
+---
+applications:
+- name: app
+  random-route: true
+  path: app
+  memory: 128M
+  buildpacks:
+  - https://github.com/cloudfoundry/nodejs-buildpack
+  services:
+  - nodeuaa
